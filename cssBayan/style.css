@@ -197,6 +197,8 @@ input[type="radio"]:checked + label {
    }
 }
 
+
+
 @media (hover: hover) {
    /* when hover is supported */
    
@@ -207,6 +209,18 @@ input[type="radio"]:checked + label {
    .main__container:hover label .close-btn {
       opacity: 1;
       transition: all 0.3s;
+   }
+
+   .accardion-head .accardion-body {
+      transition: all 0.4s;
+   }
+   
+   .accardion-head:hover .accardion-body {
+      height: auto;
+      opacity: 1;
+      animation-name: meme;
+      animation-duration: 0.5s;
+      transition: all 0.5s;
    }
 }
 
@@ -224,4 +238,9 @@ input[type="radio"]:checked + label {
       opacity: 1;
       transition: all 0.3s;
    }
+}
+
+@keyframes meme {
+   0% {scale: 0;}
+   100% {scale: 1;}
 }
